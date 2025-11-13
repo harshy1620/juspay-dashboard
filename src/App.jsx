@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "./layout/layout.jsx";
+import Layout from "./layout/Layout.jsx";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Ecommerce from "./pages/Ecommerce/Ecommerce";
 import { useSelector } from "react-redux";

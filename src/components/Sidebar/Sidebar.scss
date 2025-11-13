@@ -1,0 +1,229 @@
+/* Sidebar: refined to match Figma tokens you provided */
+.sidebar {
+  width: 212px;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  font-family: "Inter", sans-serif;
+  overflow-y: auto;
+}
+
+/* header */
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.sidebar__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.sidebar__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+/* section header row where we show Recently */
+.sidebar__section {
+//   margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.sidebar__section-head {
+  display: flex;
+  align-items: center;
+//   justify-content: space-between;
+gap: 1.5em;
+  margin-bottom: 8px;
+}
+
+.sidebar__section-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(28, 28, 28, 0.4); /* black/40% */
+  margin-left: 1.1em;
+}
+
+.sidebar__section-sub {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(28, 28, 28, 0.25); /* even less visible "Recently" */
+}
+
+/* list base */
+.sidebar__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* === Favorites (with bullets) === */
+.sidebar__list.favorites {
+  padding-left: 6px;
+}
+
+.sidebar__fav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+  margin-bottom: 6px;
+}
+
+.sidebar__fav-dot {
+  font-size: 16px;
+  line-height: 0;
+  color: rgba(28, 28, 28, 0.6);
+}
+
+.sidebar__fav-label {
+  display: inline-block;
+}
+
+/* === Dashboards (Default / eCommerce) === */
+.sidebar__item {
+  display: flex;
+  align-items: center;
+//   justify-content: space-between;
+  padding: 3px 6px;
+  width: 200px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+  margin-bottom: 6px;
+  transition: background 0.15s ease;
+}
+
+/* left area to align pill indicator + label */
+.sidebar__item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* placeholder before label — icon / small left space */
+.sidebar__icon-placeholder {
+  width: 12px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+/* active tab: left black pill & light rounded background */
+.sidebar__item.active {
+  background: rgba(0, 0, 0, 0.07);
+  font-weight: 400;
+  position: relative;
+}
+
+.sidebar__item.active::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  width: 6px;
+  height: 23px;
+  background: #000;
+  border-radius: 4px;
+  transform: translateX(6px);
+}
+
+/* === Pages list (no bullets, user profile dropdown only) === */
+.sidebar__item.no-bullet,
+.sidebar__item.dropdown-no-bg {
+  background: transparent;
+  padding: 6px 6px;
+  cursor: pointer;
+}
+
+/* page icon placeholder */
+.sidebar__page-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 2px;
+}
+
+/* label */
+.sidebar__label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+}
+
+/* dropdown arrow */
+.sidebar__arrow {
+  color: rgba(28, 28, 28, 0.6);
+}
+
+/* sublist for user profile */
+.sidebar__sublist {
+  list-style: none;
+  padding-left: 22px;
+  margin-top: -3px;
+  
+}
+
+.sidebar__subitem {
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+  padding: 6px 0;
+  cursor: pointer;
+      display: flex
+;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 1.8em;
+}
+
+/* hover states */
+.sidebar__item:hover,
+.sidebar__fav-item:hover,
+.sidebar__subitem:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* dark theme adjustments (if you use theme variable) */
+[data-theme="dark"] {
+  .sidebar {
+    background: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+
+    .sidebar__title,
+    .sidebar__label {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .sidebar__section-title {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .sidebar__fav-dot,
+    .sidebar__arrow {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .sidebar__item.active::before {
+      background: #fff;
+    }
+  }
+}

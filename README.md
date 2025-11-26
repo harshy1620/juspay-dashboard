@@ -1,16 +1,95 @@
-# React + Vite
+📊 Juspay Dashboard (Admin Panel UI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Admin Dashboard UI built using React + Vite + SCSS + Recharts.
+This project visualizes e-commerce metrics like revenue, orders, customers, locations, and product performance.
 
-Currently, two official plugins are available:
+Built as a UI assignment / showcase inspired by Juspay-style analytics dashboards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo
 
-## React Compiler
+👉 Live URL: (https://juspay-dashboard-one.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 GitHub Repository:
 
-## Expanding the ESLint configuration
+https://github.com/harshy1620/juspay-dashboard
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖥️ Tech Stack
+
+React 18 – UI development
+
+Vite – Fast bundler & dev server
+
+SCSS – Styling
+
+Recharts – Bar / Line / Donut charts
+
+Redux Toolkit – App state (theme + features ready)
+
+react-simple-maps – World map visualization
+
+Vercel – Deployment
+
+✨ Features
+
+✅ Clean & modern dashboard UI
+✅ Responsive layout (desktop, tablet, mobile)
+✅ Stats cards with trend indicators
+✅ Projections vs Actuals bar chart
+✅ Revenue comparison line chart
+✅ World map with location markers
+✅ Revenue by location list
+✅ Top selling products table
+✅ Donut chart for total sales
+✅ Hover & interaction effects
+✅ Modular, reusable components
+
+📁 Folder Structure
+src/
+│
+├── assets/
+│   └── icons/
+│
+├── components/
+│   └── Dashboard/
+│       ├── StatsCard/
+│       ├── BarChartCard/
+│       ├── RevenueChart/
+│       ├── LocationMap/
+│       ├── ProductsTable/
+│       └── TotalSales/
+│
+├── pages/
+│   └── Dashboard/
+│       ├── Dashboard.jsx
+│       └── styles.scss
+│
+├── layout/
+│   └── Layout.jsx
+│
+├── app/
+│   ├── store.js
+│   └── rootReducer.js
+│
+├── utils/
+│   ├── constants.js
+│   └── formatters.js
+│
+└── main.jsx
+
+🚀 How to Run Locally
+1️⃣ Clone the repository
+git clone https://github.com/harshy1620/juspay-dashboard.git
+cd juspay-dashboard
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start development server
+npm run dev
+
+
+Now open this in your browser:
+
+http://localhost:5173
+
+

@@ -1,0 +1,76 @@
+.location-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT MAP SECTION */
+.map-area {
+    width: 154px;
+    height: 82px;
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* RIGHT LIST SECTION */
+.locations-list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 200px;
+
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c1c1c;
+  }
+}
+
+/* ROW INSIDE RIGHT PANEL */
+.location-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .flag {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  .amount {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

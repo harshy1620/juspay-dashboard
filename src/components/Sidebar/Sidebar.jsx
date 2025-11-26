@@ -52,7 +52,7 @@ const Sidebar = () => {
               <li key={i}>
                 <NavLink
                   to={item.path}
-                  end={item.path === "/"}
+                //   end={item.path === "/"}
                   className={({ isActive }) =>
                     isActive ? "sidebar__item active" : "sidebar__item"
                   }

@@ -1,0 +1,145 @@
+// Dashboard container
+.dashboard {
+  width: 100%;
+  padding: 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  background: #f6f7fa; 
+}
+
+
+.band {
+    width: 90%;
+
+  display: flex;
+  gap: 22px;
+  align-items: stretch; 
+}
+
+/* Right column (narrow) common styling */
+.band__right {
+  flex: 1;              
+  min-width: 300px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  > * {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Left column (wide) */
+.band__left {
+  flex: 2.2; 
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 432px;
+}
+
+
+.band--top {
+ 
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 18px;
+}
+
+
+.stats-grid > * {
+  width: 100%;
+  height: 120px; 
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 14px;
+  background: #fff;
+}
+
+
+.band__right > .bar-chart-card,
+.band__right > * {
+
+  border-radius: 12px;
+  padding: 18px;
+  width:450px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+
+.band--middle .band__left {
+
+  > * {
+    width: 100%;
+    // height: 320px; 
+    border-radius: 12px;
+    padding: 18px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+}
+ .band__left--middle{
+  width: 70%;
+ }
+
+
+.band--middle .band__right > * {
+  // height: 320px;
+  width: 220px;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+
+.band--bottom .band__left > * {
+  min-height: 260px; 
+  border-radius: 12px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.band--bottom .band__right > * {
+  min-height: 260px;
+  width: 202px;
+  border-radius: 12px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+
+@media (max-width: 1100px) {
+  .band {
+    flex-direction: column;
+  }
+
+  .band__right {
+    max-width: none;
+    min-width: 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .band__left, .band__right {
+    width: 100%;
+  }
+}

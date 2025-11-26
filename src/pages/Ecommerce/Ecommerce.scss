@@ -119,37 +119,37 @@ margin-top: -2em;
   }
 
   &.in-progress {
-    color: #7367f0; // purple text
+    color: #7367f0; 
     .status-dot {
-      background-color: #7367f0; // purple dot
+      background-color: #7367f0; 
     }
   }
 
   &.complete {
-    color: #51d29a; // green text
+    color: #51d29a; 
     .status-dot {
-      background-color: #51d29a; // green dot
+      background-color: #51d29a; 
     }
   }
 
   &.pending {
-    color: #5aa8ff; // blue text
+    color: #5aa8ff; 
     .status-dot {
-      background-color: #5aa8ff; // blue dot
+      background-color: #5aa8ff;
     }
   }
 
   &.approved {
-    color: #f8c255; // yellow text
+    color: #f8c255; 
     .status-dot {
-      background-color: #f8c255; // yellow dot
+      background-color: #f8c255; 
     }
   }
 
   &.rejected {
-    color: #ff6b6b; // red text
+    color: #ff6b6b; 
     .status-dot {
-      background-color: #ff6b6b; // red dot
+      background-color: #ff6b6b; 
     }
   }
 }
@@ -183,7 +183,7 @@ margin-top: -2em;
 
     &:disabled {
       opacity: 0.4;
-    //   cursor: not-allowed;
+
     }
   }
 

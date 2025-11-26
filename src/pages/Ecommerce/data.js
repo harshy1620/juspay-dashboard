@@ -1,5 +1,4 @@
 export const ordersData = [
-  // === First 10 (from screenshot) ===
   { id: "#CM9801", avatar:"https://i.pravatar.cc/40?img=1", user: "Natali Craig", project: "Landing Page", address: "Meadow Lane Oakland", date: "Just now", status: "In Progress" },
   { id: "#CM9802", avatar:"https://i.pravatar.cc/40?img=1", user: "Kate Morrison", project: "CRM Admin pages", address: "Larry San Francisco", date: "A minute ago", status: "Complete" },
   { id: "#CM9803", avatar:"https://i.pravatar.cc/40?img=1", user: "Drew Cano", project: "Client Project", address: "Bagwell Avenue Ocala", date: "1 hour ago", status: "Pending" },
@@ -11,7 +10,7 @@ export const ordersData = [
   { id: "#CM9809", avatar:"https://i.pravatar.cc/40?img=1", user: "Orlando Diggs", project: "Admin Dashboard", address: "Washburn Baton Rouge", date: "Yesterday", status: "Approved" },
   { id: "#CM9810", avatar:"https://i.pravatar.cc/40?img=1", user: "Andi Lane", project: "App Landing Page", address: "Nest Lane Olivette", date: "Feb 2, 2023", status: "Rejected" },
 
-  // === 40 more new entries ===
+
   { id: "#CM9811", avatar:"https://i.pravatar.cc/40?img=1", user: "Michael Ross", project: "E-commerce Website", address: "Sunset Blvd LA", date: "3 hours ago", status: "In Progress" },
   { id: "#CM9812", avatar:"https://i.pravatar.cc/40?img=1", user: "Rachel Green", project: "Social Media Campaign", address: "Park Avenue NY", date: "Today", status: "Complete" },
   { id: "#CM9813", avatar:"https://i.pravatar.cc/40?img=1", user: "Ross Geller", project: "Brand Portfolio", address: "Baker Street London", date: "2 days ago", status: "Pending" },

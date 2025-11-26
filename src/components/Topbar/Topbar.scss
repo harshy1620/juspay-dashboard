@@ -40,13 +40,13 @@
     align-items: center;
     font-size: 14px;
     line-height: 20px;
-    color: #1c1c1c;
+    color: var(--text-color);
     margin-left: 10px;
     gap: 6px;
 
     span {
       font-weight: 400;
-      color: rgba(28, 28, 28, 0.6);
+      color: var(--muted);
     }
 
     .divider {
@@ -54,7 +54,7 @@
     }
 
     .active {
-      color: #1c1c1c;
+      color: var(--text-color);
       font-weight: 500;
     }
   }
@@ -97,17 +97,17 @@
     border: none;
     padding: 0 40px;
     font-size: 14px;
-    color: #1c1c1c;
+    color: var(--text-color);
     background: var(--bg-color);
     outline: none;
     transition: border 0.2s ease;
 
     &::placeholder {
-      color: rgba(28, 28, 28, 0.6);
+      color: var(--muted);
     }
 
     &:focus {
-      border-color: #4f46e5;
+      border-color: var(--primary);
     }
   }
 
@@ -130,6 +130,7 @@
       width: 22px;
       height: 22px;
       opacity: 0.8;
+      filter: var(--icon-filter, none);
     }
 
     &:hover img {

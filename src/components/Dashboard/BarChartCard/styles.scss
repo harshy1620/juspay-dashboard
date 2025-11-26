@@ -1,8 +1,8 @@
 .bar-chart-card {
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 18px 20px;
-  border: 1px solid #f0f0f0;
+  border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -17,18 +17,18 @@
   h3 {
     font-size: 16px;
     font-weight: 600;
-    color: #1c1c1c;
+    color: var(--text-color);
   }
 
   .chart-legend {
     display: flex;
     gap: 16px;
 
-    .item {
+      .item {
       display: flex;
       align-items: center;
       font-size: 13px;
-      color: #4c4c4c;
+      color: var(--muted);
       gap: 6px;
 
       .dot {

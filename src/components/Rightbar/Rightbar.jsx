@@ -1,11 +1,10 @@
 import React from "react";
 import "./Rightbar.scss";
 import { rightbarData } from "./data";
-import { useDispatch } from "react-redux";
-import { toggleNotifications } from "../../features/notifications/notificationsSlice";
+// no redux usage required here currently
 
 const Rightbar = () => {
-  const dispatch = useDispatch();
+  // dispatch commented out as notification toggle is handled in Layout
 
   return (
     <aside className="rightbar">

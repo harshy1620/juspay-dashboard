@@ -1,5 +1,5 @@
 .products-table {
-  background: #fff;
+  background: var(--card-bg);
   padding: 20px;
   border-radius: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -16,11 +16,11 @@
 
     th {
       font-weight: 600;
-      color: #666;
+      color: var(--muted);
     }
 
     tr {
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid var(--border-color);
     }
   }
 }

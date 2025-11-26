@@ -40,18 +40,34 @@ const BarChartCard = () => {
       <div className="bar-chart-wrapper">
         <ResponsiveContainer width="100%" height={260}>
           <BarChart data={data} barSize={16}>
-            <XAxis dataKey="month" axisLine={false} tickLine={false} />
-            <YAxis axisLine={false} tickLine={false} />
-            <Tooltip cursor={{ fill: "rgba(0,0,0,0.05)" }} />
+            <XAxis
+              dataKey="month"
+              axisLine={{ stroke: "var(--border-color)" }}
+              tickLine={false}
+              tick={{ fill: "var(--muted)" }}
+            />
+            <YAxis
+              axisLine={{ stroke: "var(--border-color)" }}
+              tickLine={false}
+              tick={{ fill: "var(--muted)" }}
+            />
+
+            <Tooltip
+              cursor={{ fill: "var(--hover-bg)" }}
+              contentStyle={{ backgroundColor: "var(--card-bg)", color: "var(--text-color)", border: "1px solid var(--border-color)" }}
+              itemStyle={{ color: "var(--text-color)" }}
+            />
+
+            <Legend wrapperStyle={{ color: "var(--muted)" }} />
 
             <Bar
               dataKey="projected"
-              fill="#E1ECFF"   
-              radius={[6, 6, 0, 0]} 
+              fill="var(--primary-light)"
+              radius={[6, 6, 0, 0]}
             />
             <Bar
               dataKey="actual"
-              fill="#4C8EF7"  
+              fill="var(--primary)"
               radius={[6, 6, 0, 0]}
             />
           </BarChart>

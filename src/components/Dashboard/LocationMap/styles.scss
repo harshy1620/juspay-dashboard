@@ -1,5 +1,5 @@
 .location-card {
-  background: #fff;
+  background: var(--card-bg);
   padding: 20px;
   border-radius: 14px;
   display: flex;
@@ -13,7 +13,7 @@
 .map-area {
     width: 154px;
     height: 82px;
-  background: #fafafa;
+  background: var(--hover-bg);
   border-radius: 12px;
   overflow: hidden;
 
@@ -35,7 +35,7 @@
     margin: 0 0 10px 0;
     font-size: 16px;
     font-weight: 600;
-    color: #1c1c1c;
+    color: var(--text-color);
   }
 }
 
@@ -45,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid var(--border-color);
 
   .left {
     display: flex;
@@ -56,7 +56,7 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background: #f4f4f4;
+      background: var(--hover-bg);
       display: flex;
       align-items: center;
       justify-content: center;

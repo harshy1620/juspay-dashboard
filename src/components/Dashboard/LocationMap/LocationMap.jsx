@@ -28,9 +28,9 @@ const LocationMap = () => {
                   key={geo.rsmKey}
                   geography={geo}
                   style={{
-                    default: { fill: "#f3f3f3", outline: "none" },
-                    hover: { fill: "#e4e4e4", outline: "none" },
-                    pressed: { fill: "#ccc", outline: "none" },
+                    default: { fill: "var(--hover-bg)", outline: "none" },
+                    hover: { fill: "var(--border-color)", outline: "none" },
+                    pressed: { fill: "var(--border-color)", outline: "none" },
                   }}
                 />
               ))
@@ -40,7 +40,7 @@ const LocationMap = () => {
           {/* DOT MARKERS */}
           {locationData.map((loc, i) => (
             <Marker key={i} coordinates={loc.coordinates}>
-              <circle r={6} fill="#7367f0" stroke="#fff" strokeWidth={2} />
+              <circle r={6} fill="var(--primary)" stroke="var(--marker-stroke)" strokeWidth={2} />
             </Marker>
           ))}
         </ComposableMap>

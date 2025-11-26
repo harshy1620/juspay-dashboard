@@ -6,7 +6,7 @@ margin-top: -2em;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 14px;
-    color: #1c1c1c;
+  color: var(--text-color);
         text-align: start;
         margin: 1em;
   }
@@ -17,8 +17,8 @@ margin-top: -2em;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
-    padding: 1em;
-    background-color: #f3f3f3;
+  padding: 1em;
+  background-color: var(--card-bg);
     border-radius: 8px;
     height: 21px !important;
     .toolbar__left {
@@ -35,6 +35,7 @@ margin-top: -2em;
           height: 22px;
           opacity: 0.8;
           transition: 0.2s;
+          filter: var(--icon-filter);
 
           &:hover {
             opacity: 1;
@@ -69,25 +70,25 @@ margin-top: -2em;
         height: 25em;
     }
     tbody tr:hover {
-  background-color: #f7f7f7;
-}
+      background-color: var(--hover-bg);
+    }
 
 
     th,
     td {
       text-align: left;
       padding: 6px;
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid var(--border-color);
     }
 
     th {
-      color: rgba(28, 28, 28, 0.6);
+      color: var(--muted);
       font-weight: 500;
       font-size: 13px;
     }
 
     td {
-      color: #1c1c1c;
+      color: var(--text-color);
       vertical-align: middle;
     }
     
@@ -119,37 +120,37 @@ margin-top: -2em;
   }
 
   &.in-progress {
-    color: #7367f0; 
+    color: var(--primary);
     .status-dot {
-      background-color: #7367f0; 
+      background-color: var(--primary);
     }
   }
 
   &.complete {
-    color: #51d29a; 
+    color: var(--success);
     .status-dot {
-      background-color: #51d29a; 
+      background-color: var(--success);
     }
   }
 
   &.pending {
-    color: #5aa8ff; 
+    color: var(--info);
     .status-dot {
-      background-color: #5aa8ff;
+      background-color: var(--info);
     }
   }
 
   &.approved {
-    color: #f8c255; 
+    color: var(--warning);
     .status-dot {
-      background-color: #f8c255; 
+      background-color: var(--warning);
     }
   }
 
   &.rejected {
-    color: #ff6b6b; 
+    color: var(--danger);
     .status-dot {
-      background-color: #ff6b6b; 
+      background-color: var(--danger);
     }
   }
 }
@@ -167,18 +168,21 @@ margin-top: -2em;
     border: none;
     background: transparent;
     font-size: 14px;
+    color: var(--text-color);
     padding: 6px 10px;
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.2s ease;
 
     &.active {
-      background: #f2f2f2;
+      background: var(--hover-bg);
+      color: var(--text-color);
       font-weight: 400;
     }
 
     &:hover:not(.active):not(:disabled) {
-      background: #f7f7f7;
+      background: var(--hover-bg);
+      color: var(--text-color);
     }
 
     &:disabled {
@@ -190,6 +194,20 @@ margin-top: -2em;
   .arrow {
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+/* Ensure toolbar icons and pagination are visible in dark mode too */
+[data-theme="dark"] {
+  .ecommerce {
+    .toolbar__left button img,
+    .toolbar__right img {
+      filter: var(--icon-filter);
+    }
+
+    .pagination button {
+      color: var(--text-color);
+    }
   }
 }
 

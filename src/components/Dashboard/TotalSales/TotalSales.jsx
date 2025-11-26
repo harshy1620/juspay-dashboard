@@ -3,10 +3,10 @@ import { PieChart, Pie, Cell } from "recharts";
 import "./styles.scss";
 
 const data = [
-  { name: "Direct", value: 300.56, color: "#7367f0" },
-  { name: "Affiliate", value: 135.12, color: "#51d29a" },
-  { name: "Sponsored", value: 154.02, color: "#5aa8ff" },
-  { name: "E-mail", value: 48.96, color: "#f8c255" },
+  { name: "Direct", value: 300.56, color: "var(--primary)" },
+  { name: "Affiliate", value: 135.12, color: "var(--success)" },
+  { name: "Sponsored", value: 154.02, color: "var(--info)" },
+  { name: "E-mail", value: 48.96, color: "var(--warning)" },
 ];
 
 const TotalSales = () => {

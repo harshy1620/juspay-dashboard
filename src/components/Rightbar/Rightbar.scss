@@ -22,7 +22,7 @@
     h4 {
       font-size: 16px;
       font-weight: 600;
-      color: #1c1c1c;
+      color: var(--text-color);
       margin: 0;
     }
 
@@ -31,7 +31,7 @@
       border: none;
       font-size: 20px;
       cursor: pointer;
-      color: rgba(28, 28, 28, 0.7);
+      color: var(--muted);
       transition: 0.2s ease;
       &:hover {
         opacity: 0.6;
@@ -52,7 +52,7 @@
   &__title {
     font-size: 14px;
     font-weight: 600;
-    color: #1c1c1c;
+    color: var(--text-color);
     margin-bottom: 12px;
         text-align: start;
   }
@@ -76,14 +76,14 @@
         gap: 0.2em;
       p {
         font-size: 14px;
-        color: #1c1c1c;
+        color: var(--text-color);
         margin: 0;
 
       }
 
       span {
         font-size: 12px;
-        color: rgba(28, 28, 28, 0.6);
+        color: var(--muted);
       }
     }
   }
@@ -103,7 +103,7 @@
     gap: 0.2em;
     p {
       font-size: 14px;
-      color: #1c1c1c;
+      color: var(--text-color);
       margin: 0;
     }
     span {
@@ -135,20 +135,20 @@
 
 /* dark mode */
 [data-theme="dark"] .rightbar {
-  background: #1b1b1b;
-  border-color: rgba(255, 255, 255, 0.15);
+  background: var(--card-bg);
+  border-color: var(--border-color);
 
   h4,
   .rightbar__title,
   p {
-    color: #fff;
+    color: var(--text-color);
   }
 
   span {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--muted-2);
   }
 
   .rightbar__close {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--muted-2);
   }
 }

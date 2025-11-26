@@ -1,5 +1,5 @@
 .total-sales-card {
-  background: #ffffff;
+  background: var(--card-bg);
   padding: 22px;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -59,9 +59,9 @@ display: flex;
     gap: 10px;
 
     .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
     }
 
     p {

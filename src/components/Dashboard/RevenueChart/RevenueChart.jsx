@@ -26,22 +26,22 @@ const RevenueChart = () => {
 
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={data}>
-          <CartesianGrid stroke="#eee" />
-          <XAxis dataKey="month" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
+          <CartesianGrid stroke="var(--border-color)" />
+          <XAxis dataKey="month" axisLine={{ stroke: "var(--border-color)" }} tick={{ fill: "var(--muted)" }} />
+          <YAxis axisLine={{ stroke: "var(--border-color)" }} tick={{ fill: "var(--muted)" }} />
+          <Tooltip contentStyle={{ backgroundColor: "var(--card-bg)", color: "var(--text-color)", border: "1px solid var(--border-color)" }} itemStyle={{ color: "var(--text-color)" }} />
+          <Legend wrapperStyle={{ color: "var(--muted)" }} />
 
           <Line
             type="monotone"
             dataKey="current"
-            stroke="#6C91F7"
+            stroke="var(--primary)"
             strokeWidth={3}
           />
           <Line
             type="monotone"
             dataKey="previous"
-            stroke="#000"
+            stroke="var(--text-color)"
             strokeDasharray="4 4"
             strokeWidth={2}
           />
